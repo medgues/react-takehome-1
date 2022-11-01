@@ -2,15 +2,14 @@ import React from 'react'
 
 function Search() {
   return (
-    <div class="flex flex-col items-center justify-center py-20">
-        <div className='homeofmovies flex flex-row items-center justify-center'>
+    <div class="flex flex-col items-center justify-center gap-2">
+        <div className='homeofmovies flex flex-row items-center w-full justify-center'>
         <div className=''>
           <img src="https://img.icons8.com/nolan/96/play.png" alt='logo' className=' homelogo' />
           </div>
-          <p className='w-max font-semibold  pl-4 pb-5 main-txt text-6xl text-slate-100 '>the home of movies</p>
+          <p className=' font-semibold main-txt text-6xl text-center text-slate-100 '>the home of movies</p>
         </div> 
       <div className='flex flex-row z-10 items-center'>
-      
       <form method="GET">
         <div class="relative  text-gray-600 focus-within:text-gray-400">
           <span class="absolute inset-y-0 left-0 flex items-center pl-2">

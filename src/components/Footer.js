@@ -19,16 +19,14 @@ function footer() {
           <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
         </div>
       </div>
-      <div className='flex flex-col'>
-        <div class="mx-auto flex flex-row gap-7">
+      <div className='flex flex-col '>
           <p class="text-blue-400 font-bold  text-center self-center">
             Download our app:
           </p>
           <div class="flex justify-center pb-24 lg:pb-0 fade-in">
-            <img src="App Store.svg" className="h-12 pr-12 transform hover:scale-125 duration-300 ease-in-out" alt=' app store logo' />
-            <img src="Play Store.svg" className="h-12 transform hover:scale-125 duration-300 ease-in-out" alt='play store logo' />
+            <img src="App Store.svg" className="h-12 w-auto transform hover:scale-125 duration-300 ease-in-out" alt=' app store logo' />
+            <img src="Play Store.svg" className="h-12 w-auto transform hover:scale-125 duration-300 ease-in-out" alt='play store logo' />
           </div>
-        </div>
       </div>
     </footer>
   )
