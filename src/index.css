@@ -23,7 +23,7 @@ code {
   z-index: 100;
 }
 .cardwidth{
-  max-width: 14rem;
+  max-width: 20%;
 }
 .homeofmovies{
   font-family: 'Dancing Script', cursive;
@@ -58,4 +58,20 @@ code {
   0% , 25% {transform: rotate(0deg)}
   50% , 75% {transform: rotate(180deg)}
   100% {transform: rotate(360deg)}
+}
+
+.nermophism{
+  border-radius: 0px;
+  background: #13143f;
+  box-shadow:  22px -22px 43px #0f0f31,
+               -22px 22px 43px #17194d;
+}
+.cardbackground{
+  background: rgba(79,5,34,0.4);
+-webkit-backdrop-filter: blur(4px);
+backdrop-filter: blur(4px);
+border: 1px solid rgba(79,5,34,0.2);
+}
+.series{
+  height: -webkit-fill-available;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 function footer() {
   return (
-    <footer className="footer p-10 bg-base-200 text-base-content rounded justify-between bg-black">
+    <footer className="footer p-10 text-base-content rounded justify-between bg-black">
       <div className='flex flex-col'>
       <div className="grid grid-flow-col gap-4 text-white">
         <a className="link link-hover">About us</a>
@@ -20,12 +20,13 @@ function footer() {
         </div>
       </div>
       <div className='flex flex-col '>
-          <p class="text-blue-400 font-bold  text-center self-center">
+          <p className="text-blue-400 font-bold  text-center self-center">
             Download our app:
           </p>
-          <div class="flex justify-center pb-24 lg:pb-0 fade-in">
-            <img src="App Store.svg" className="h-12 w-auto transform hover:scale-125 duration-300 ease-in-out" alt=' app store logo' />
-            <img src="Play Store.svg" className="h-12 w-auto transform hover:scale-125 duration-300 ease-in-out" alt='play store logo' />
+          <div className="flex justify-center pb-24 gap-5 lg:pb-0 fade-in border-solid border-white">
+            <img src="App Store.svg" className="h-10 w-auto transform hover:scale-125 duration-300 ease-in-out" alt=' app store logo' />
+            <img src="Play Store.svg" className="h-10 border-solid border-white w-auto transform hover:scale-125 duration-300 ease-in-out" alt='play store logo' />
+            <img src="windows-store.svg" className="h-10 w-auto transform hover:scale-125 duration-300 ease-in-out" alt='play store logo' />
           </div>
       </div>
     </footer>
