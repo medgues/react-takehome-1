@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.homelogo{
+  -webkit-animation:swirl-in-bck .65s ease-out both;animation:swirl-in-bck .65s ease-out both
+}
+.main-text{
+  z-index: 100;
+}
+.cardwidth{
+  max-width: 20%;
+}
+.homeofmovies{
+  font-family: 'Dancing Script', cursive;
+  -webkit-animation:focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both
+}
+
+
+@-webkit-keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes swirl-in-bck{0%{-webkit-transform:rotate(540deg) scale(5);transform:rotate(540deg) scale(5);opacity:0}100%{-webkit-transform:rotate(0) scale(1);transform:rotate(0) scale(1);opacity:1}}@keyframes swirl-in-bck{0%{-webkit-transform:rotate(540deg) scale(5);transform:rotate(540deg) scale(5);opacity:0}100%{-webkit-transform:rotate(0) scale(1);transform:rotate(0) scale(1);opacity:1}}
+
+.loader {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+.loader:before,
+.loader:after {
+  content:"";
+  display: block;
+  border: 32px solid transparent;
+  border-top-color: rgb(0, 98, 255);
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: weld-rotate 2s infinite ease-in;
+}
+.loader:before {
+  border-color: transparent  transparent transparent #a200ff;
+  animation-delay: 0.5s;
+}
+@keyframes weld-rotate {
+  0% , 25% {transform: rotate(0deg)}
+  50% , 75% {transform: rotate(180deg)}
+  100% {transform: rotate(360deg)}
+}
+
+.nermophism{
+  border-radius: 0px;
+  background: #13143f;
+  box-shadow:  22px -22px 43px #0f0f31,
+               -22px 22px 43px #17194d;
+}
+.cardbackground{
+  background: rgba(79,5,34,0.4);
+-webkit-backdrop-filter: blur(4px);
+backdrop-filter: blur(4px);
+border: 1px solid rgba(79,5,34,0.2);
+}
+.series{
+  height: -webkit-fill-available;
+}
