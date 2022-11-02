@@ -1,7 +1,7 @@
 import React from 'react'
 import Genre from './Genre'
 
-function Search() {
+function Search({handelSearch}) {
   return (
     <div className="flex flex-col items-center justify-center gap-2">
         <div className='homeofmovies flex flex-row items-center w-full justify-center'>
@@ -18,7 +18,7 @@ function Search() {
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" className="w-6 h-6"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
             </button>
           </span>
-          <input type="search" name="q" className="py-2 text-sm text-white bg-gray-900 rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900" placeholder="Search..." autoComplete="off" />
+          <input onChange={(e) => handelSearch(e.target.value)} type="search" name="q" className="py-2 text-sm text-white bg-gray-900 rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900" placeholder="Search..." autoComplete="off" />
         </div>
       </form>
       <button className="px-4 nermophism py-2 text-white bg-purple-600 ml-1 rounded-md p-10 focus:outline-none ">
