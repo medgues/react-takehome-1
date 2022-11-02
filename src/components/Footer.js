@@ -23,10 +23,10 @@ function footer() {
           <p className="text-blue-400 font-bold  text-center self-center">
             Download our app:
           </p>
-          <div className="flex justify-center pb-24 gap-5 lg:pb-0 fade-in border-solid border-white">
-            <img src="App Store.svg" className="h-10 w-auto transform hover:scale-125 duration-300 ease-in-out" alt=' app store logo' />
-            <img src="Play Store.svg" className="h-10 border-solid border-white w-auto transform hover:scale-125 duration-300 ease-in-out" alt='play store logo' />
-            <img src="windows-store.svg" className="h-10 w-auto transform hover:scale-125 duration-300 ease-in-out" alt='play store logo' />
+          <div className="flex swidth justify-center pb-24 gap-5 lg:pb-0 fade-in border-solid border-white">
+            <img src="App Store.svg" className="h-10 smedia transform hover:scale-125 duration-300 ease-in-out" alt=' app store logo' />
+            <img src="Play Store.svg" className="h-10 smedia  border-solid border-white w-auto transform hover:scale-125 duration-300 ease-in-out" alt='play store logo' />
+            <img src="windows-store.svg" className="h-10 smedia  w-auto transform hover:scale-125 duration-300 ease-in-out" alt='play store logo' />
           </div>
       </div>
     </footer>

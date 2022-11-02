@@ -1,7 +1,6 @@
 import React from 'react'
 
 function Card({ movie }) {
-  console.log(movie)
   return (
     <div className="card cardwidth m-1 text-white  glass">
       <figure><img src={movie.images['Poster Art'].url} alt="car!" /></figure>

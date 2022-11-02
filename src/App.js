@@ -13,16 +13,21 @@ function App() {
   const fetchMovies = async () => {
     const fetchedMovies = await FetchMovies()
     setMovies(fetchedMovies)
-    console.log('movies', fetchedMovies)
+    
   }
   useEffect(() => {
     fetchMovies()
-    
-  }, [])
+    console.log('movies',movies)
+  }, []) 
+
+  const handelSearch = (event) => {
+    const searchTriger = movies.filter((item)=> item.title === event)
+  }
+
   return (
     <BrowserRouter>
       <Navbar />
-      <Search />
+      <Search handelSearch={handelSearch} />
       <Routes>
         <Route path="/" element={<Home movies={movies.filter((item)=> item.releaseYear >= 2010)} />} />
         <Route path="/series" element={<Home movies={movies.filter((item)=> item["programType"] === "series")} />} />
@@ -32,14 +37,5 @@ function App() {
     </BrowserRouter>
   );
 }
-// function App() {
-//   return (
-//    <>
-//     <Navbar />
-//     <Home />
-//     <Footer />
-//    </>
-//   );
-// }
 
 export default App;
