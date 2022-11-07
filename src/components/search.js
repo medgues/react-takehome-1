@@ -21,11 +21,8 @@ function Search({handelSearch}) {
           <input onChange={(e) => handelSearch(e.target.value)} type="search" name="q" className="py-2 text-sm text-white bg-gray-900 rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900" placeholder="Search..." autoComplete="off" />
         </div>
       </form>
-      <button className="px-4 nermophism py-2 text-white bg-purple-600 ml-1 rounded-md p-10 focus:outline-none ">
-        Search
-      </button>
       </div>
-      <div>
+      <div className='mt-2'>
         <Genre />
       </div>
     </div>
